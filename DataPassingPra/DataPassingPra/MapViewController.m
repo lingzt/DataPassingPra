@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     // Do any additional setup after loading the view.
 }
 
@@ -24,12 +25,9 @@
     // Dispose of any resources that can be recreated.
 }
 
-
--(void)printTest{
-
-    NSLog(_StringReceiver);
-
-
+-(void)printStringReceiver{
+    NSLog(@"I am triggered from the main view controller");
+    _label.text = _stringReceiver;
 }
 
 /*

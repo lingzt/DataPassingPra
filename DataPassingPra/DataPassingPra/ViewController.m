@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -25,6 +26,13 @@
 }
 
 - (IBAction)sendMessage:(UIButton *)sender {
+    
+    MapViewController *mvc = (MapViewController *)self.childViewControllers[0];
+    mvc.stringReceiver = @"baba";
+    [mvc printStringReceiver];
+    
+    
+//    NSLog(mvc.stringReceiver);
     
     
 }

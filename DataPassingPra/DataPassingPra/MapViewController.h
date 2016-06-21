@@ -10,6 +10,9 @@
 
 @interface MapViewController : UIViewController
 
-@property (strong, nonatomic) NSString *StringReceiver;
+@property (strong, nonatomic) NSString *stringReceiver;
+@property (weak, nonatomic) IBOutlet UILabel *label;
+
+-(void)printStringReceiver;
 
 @end
